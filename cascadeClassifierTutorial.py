@@ -2,8 +2,10 @@ from __future__ import print_function
 import cv2 as cv
 import argparse
 def detectAndDisplay(frame):
-    frame_gray = cv.cvtColor(frame, cv.COLOR_BGR2GRAY)
-    frame_gray = cv.equalizeHist(frame_gray)
+    # 转变为灰度图
+    frame_gray = cv.cvtColor(frame, cv.COLOR_BGR2GRAY)  
+    # 直方图均衡化，通过拉伸像素强度分布范围来增强图像对比度，从而提高图片质量
+    frame_gray = cv.equalizeHist(frame_gray)    
     #-- Detect faces
     faces = face_cascade.detectMultiScale(frame_gray)
     for (x,y,w,h) in faces:
