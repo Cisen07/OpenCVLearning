@@ -3,7 +3,6 @@
 #import numpy
 import cv2
 import showPhoto
-import getGray
 
 '''
 img = cv2.imread('t.jpg')
