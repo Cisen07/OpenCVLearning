@@ -8,3 +8,5 @@ cv2.imshow('testImg1', frame_gray)
 frame_gray = cv2.equalizeHist(frame_gray) 
 cv2.imshow('testImg2', frame_gray)
 cv2.waitKey(0)
+
+print('--(!)Error loading eyes cascade')
